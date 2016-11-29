@@ -27,3 +27,8 @@
  * --/The Heart of Build System/-- of "Vitaé®".
  * ___________________________________________________________________________
  */
+
+
+// # Usage: $ node -v
+// # Usage: $ npm -v
+// # Usage: $ grunt -version
