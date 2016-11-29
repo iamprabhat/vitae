@@ -63,3 +63,7 @@ var appsPath = './app/';
 var noop     = chalk.red;
 var yeep     = chalk.green;
 var okay     = chalk.blue;
+
+// To get 'version', i.e. required to work on
+// SEED™: Grunt based build system. | See: http://seed.sequomics.com/.
+var version = process.env.VERSION || require('./package.json').version;
