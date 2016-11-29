@@ -56,3 +56,4 @@ var build = {
 // Global variables.
 // -----------------
 var rootPath = './';
+var appsPath = './app/';
