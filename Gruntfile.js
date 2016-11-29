@@ -40,3 +40,4 @@
 // To load required NPM modules.
 // -----------------------------
 var chalk    = require('chalk');
+var glob     = require('glob');
