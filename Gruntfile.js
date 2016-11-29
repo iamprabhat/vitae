@@ -67,3 +67,21 @@ var okay     = chalk.blue;
 // To get 'version', i.e. required to work on
 // SEED™: Grunt based build system. | See: http://seed.sequomics.com/.
 var version = process.env.VERSION || require('./package.json').version;
+
+///------------------------
+// A smart banner function.
+///------------------------
+var banner = [
+  '/*!                                                                                                  ',
+  ' * Build System — ' + yeep(build.system) + ': ' + okay(build.name) + ' — ' + version                  ,
+  ' * ' + noop(build.audience)                                                                           ,
+  ' * ---------------------------------------------------------------------------                       ',
+  ' * Copyright © 2015 - ' + new Date().getFullYear() + ', Sequømics Corporation, All rights reserved.  ',
+  ' * Available via the Apache, version 2.0. [http://www.apache.org/licenses/]                          ',
+  ' * See: http://seed.sequomics.com/ — for details.                                                    ',
+  ' * ---------------------------------------------------------------------------                       ',
+  ' */                                                                                                  ',
+  '\n',
+].map(function(s) {
+  return s.replace(/\s+$/, '');
+}).join("\n");
