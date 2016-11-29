@@ -41,3 +41,14 @@
 // -----------------------------
 var chalk    = require('chalk');
 var glob     = require('glob');
+
+///-------------------
+// An object literals.
+///-------------------
+var build = {
+  // Nonidentifier property names are quoted.
+  "system"    : "SEED™",
+  "name"      : "Umeå",
+  "year"      : "2016",
+  "audience"  : "for all designer and scientist."
+};
