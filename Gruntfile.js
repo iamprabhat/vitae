@@ -52,3 +52,7 @@ var build = {
   "year"      : "2016",
   "audience"  : "for all designer and scientist."
 };
+
+// Global variables.
+// -----------------
+var rootPath = './';
