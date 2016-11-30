@@ -90,3 +90,5 @@ var banner = [
 // All Grunt Operations Defined... |--------------------------------------------| 30/Nov/2016 | SEED™ — Umeå.
 //                           Copyright © 2016, Prabhat Kumar, All rights reserved.
 // ----------------------------------------------------------------------------------------------------------
+
+module.exports = function(grunt) {
