@@ -120,3 +120,7 @@ module.exports = function(grunt) {
   var config = {
     pkg: grunt.file.readJSON('./package.json')
   };
+  
+  /// Loading Externally-Defined Tasks.
+  /// http://gruntjs.com/api/grunt
+  grunt.loadTasks('tasks');
