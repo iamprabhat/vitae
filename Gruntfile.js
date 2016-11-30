@@ -92,3 +92,6 @@ var banner = [
 // ----------------------------------------------------------------------------------------------------------
 
 module.exports = function(grunt) {
+  
+  // Force use of Unix newlines.
+  grunt.util.linefeed = '\n';
