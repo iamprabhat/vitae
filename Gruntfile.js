@@ -115,3 +115,8 @@ module.exports = function(grunt) {
     });
     return object;
   }
+  
+  /// Initial Configurations.
+  var config = {
+    pkg: grunt.file.readJSON('./package.json')
+  };
