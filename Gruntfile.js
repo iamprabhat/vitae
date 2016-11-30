@@ -162,3 +162,7 @@ module.exports = function(grunt) {
   
   // A task to clean build(s) or Temporary file(s) and default cache directories.
   grunt.registerTask('clear', ['clean']);
+  
+  // A task to build SCSS, also to Lint and Minify.
+  // --------- http://compass-style.org/ ----------
+  grunt.registerTask('build', ['compass', 'csslint', 'cssmin']);
