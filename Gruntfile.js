@@ -156,3 +156,6 @@ module.exports = function(grunt) {
     scope: ['devDependencies', 'dependencies'],
     requireResolution: true
   });
+  
+  // Writing about Build System.
+  grunt.log.writeln(banner);
