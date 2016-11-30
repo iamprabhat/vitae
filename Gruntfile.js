@@ -159,3 +159,6 @@ module.exports = function(grunt) {
   
   // Writing about Build System.
   grunt.log.writeln(banner);
+  
+  // A task to clean build(s) or Temporary file(s) and default cache directories.
+  grunt.registerTask('clear', ['clean']);
