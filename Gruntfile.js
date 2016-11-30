@@ -146,3 +146,13 @@ module.exports = function(grunt) {
       }
     }
   });
+  
+  // 2. load-grunt-tasks ——> $ npm install load-grunt-tasks --save-dev
+  // -----------------------------------------------------------------
+  // Load multiple grunt tasks using globbing patterns.
+  require('load-grunt-tasks')(grunt, {
+    // Load all grunt-contrib tasks and another non-contrib task.
+    pattern: ['grunt-contrib-*', 'grunt-shell'],
+    scope: ['devDependencies', 'dependencies'],
+    requireResolution: true
+  });
