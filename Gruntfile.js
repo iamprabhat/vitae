@@ -133,4 +133,16 @@ module.exports = function(grunt) {
   // Project configuration for -//Vitaé®//- Build.
   // Date: 29-11-2016.
   // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  grunt.initConfig(config);
+  grunt.initConfig({
+    config,
+    appDirectory: 'app',
+    // To execute 'shell' command(s).
+    shell: {
+      makeDir: {
+        command: 'mkdir <%= appDirectory %>'
+      },
+      dirListing: {
+        command: 'ls'
+      }
+    }
+  });
