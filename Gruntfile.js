@@ -173,3 +173,7 @@ module.exports = function(grunt) {
   
   // A task to build HTML, and Minify.
   grunt.registerTask('build', ['htmlmin']);
+  
+  // A task to work on Normalize.css, from: https://github.com/necolas/normalize.css/blob/master/normalize.css
+  // to Get and Compare.
+  grunt.registerTask('normalize', ['get', 'compare']);
