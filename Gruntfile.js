@@ -170,3 +170,6 @@ module.exports = function(grunt) {
   // A task to build SCSS, also to Lint and Minify.
   // --------- http://compass-style.org/ ----------
   grunt.registerTask('build', ['compass', 'csslint', 'cssmin']);
+  
+  // A task to build HTML, and Minify.
+  grunt.registerTask('build', ['htmlmin']);
