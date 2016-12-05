@@ -177,3 +177,6 @@ module.exports = function(grunt) {
   // A task to work on Normalize.css, from: https://github.com/necolas/normalize.css/blob/master/normalize.css
   // to Get and Compare.
   grunt.registerTask('normalize', ['get', 'compare']);
+  
+  // A task to build JavaScript, also to Lint, concatenate and Minify.
+  grunt.registerTask('script', ['jshint', 'concat', 'uglify']);
