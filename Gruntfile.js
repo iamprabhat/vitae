@@ -184,3 +184,8 @@ module.exports = function(grunt) {
   // A task to serve Vitaé®
   // on to default browser.
   grunt.registerTask('serve', ['connect', 'watch']);
+  
+  // A Default Task is basically a rebuild.
+  grunt.registerTask('default', ['clear', 'build', 'html', 'script', 'connect', 'watch']);
+
+};
